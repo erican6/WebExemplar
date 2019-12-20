@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>MainPage</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SuperStats</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-sm-end" id="mainNav">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">Home</a>
+            <a class="nav-item nav-link" href="#">Database</a>
+            <a class="nav-item nav-link" href="#">Learn</a>
+            <a class="nav-item nav-link" href="#">Profile</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron jumbotron fluid">
+        <h1 class="title">Clash Royale Stats Homepage</h1><br>
+        <h2 class="title">Find Your Clash Royale Stats</h2>
+        <select>
+            <option>Player Tag Search</option>
+            <option>Clan Tag Search</option>
+        </select>
+        <br>
+        <form>
+            <input class='border' type="text" size=60 maxlength=280 placeholder="Tag..." onclick=add() id="entry"></input>
+            <button type="submit" onclick="" href="#">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-sm-12">
+          <div class="card">
+            <br>
+            <div class="subtitle-box">
+              <h3>New Information/Updates</h3>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <img src="https://i.ytimg.com/vi/QVB7PSqiK8k/maxresdefault.jpg">
+                <h4 class="cardwords">Update 13.0.9</h4>
+                <p class="cardwords">Brand New Legendary! Can this change the meta? Leaked future designs? This and more in the new Clash Royale Update!</p>
+                <button type="submit" href="#">Read More</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                  <img src="https://www.clashroyalemeta.com/wp-content/uploads/2018/03/X-Bow_29_decklist.jpg">
+                  <h4 class="cardwords">New Meta?!</h4>
+                  <p class="cardwords">The most annoying card has become the meta! Has siege cycle has overtaken the game? Learn how to use this deck here!</p>
+                  <button type="submit" href="#">Read More</button>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <div class="card">
+            <br>
+            <div class="subtitle-box">
+              <h3>Global Rankings</h3>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="list-group">
+                        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-player" role="tab">Player</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-clan" role="tab">Clan</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-CWL" role="tab">CWL</a>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="tab-content">
+                        <div class="tab-pane fade show active" id="list-player" role="tabpanel">
+                          <ul class="list-group">                            
+                              <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://vignette.wikia.nocookie.net/clashroyale/images/7/7c/LegendTrophy.png/revision/latest/scale-to-width-down/340?cb=20160305151655">6969 Trophies - Bgood</li>
+                              <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://vignette.wikia.nocookie.net/clashofclans/images/6/66/Icon_Versus_Trophy.png/revision/latest/scale-to-width-down/340?cb=20170623050123">6666 Trophies - BigMan</li>
+                              <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://toppng.com/public/uploads/thumbnail/bronze-trophy-cup-11546971403my4szlsrt8.png">6665 Trophies - XREX</li>
+                              <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://royaleapi.com/static/img/ui/challenge-grand.png">6450 Trophies - BobW</li>
+                              <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://royaleapi.com/static/img/ui/challenge-grand.png">6299 Trophies - JKL</li>
+                              <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://royaleapi.com/static/img/ui/challenge-grand.png">6290 Trophies - Tankx</li>
+                              <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://royaleapi.com/static/img/ui/challenge-grand.png">6280 Trophies - Master</li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-clan" role="tabpanel">
+                            <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://vignette.wikia.nocookie.net/clashroyale/images/7/7c/LegendTrophy.png/revision/latest/scale-to-width-down/340?cb=20160305151655">56000 Trophies: GameON</li>
+                            <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://vignette.wikia.nocookie.net/clashofclans/images/6/66/Icon_Versus_Trophy.png/revision/latest/scale-to-width-down/340?cb=20170623050123">55345 Trophies: TimeToShine</li>
+                            <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://toppng.com/public/uploads/thumbnail/bronze-trophy-cup-11546971403my4szlsrt8.png">54369 Trophies: Comos</li>
+                            <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://royaleapi.com/static/img/ui/challenge-grand.png">53300 Trophies: BiggerBetter</li>
+                            <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://royaleapi.com/static/img/ui/challenge-grand.png">52999 Trophies: JustKidding</li>
+                            <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://royaleapi.com/static/img/ui/challenge-grand.png">51000 Trophies - Canadians</li>
+                            <li class="list-group-item list-group-item-dark"><img class="trophy" src="https://royaleapi.com/static/img/ui/challenge-grand.png">51500 Trophies - Kassian!</li>
+                        </div>
+                        <div class="tab-pane fade" id="list-CWL" role="tabpanel">Same as other two...</div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      body {
+        background-color: #151515;
+      }
+      .jumbotron {
+        background-image: url(data:image/jpeg;base64,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);
+        background-size: 25%;
+        height: 410px;
+      }
+      .title {
+        font-family: georgia,garamond,serif;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+      }
+      .subtitle-box {
+        font-family: georgia,garamond,serif;
+        font-weight: bold;
+        color: white;
+        border-left: 8px solid #89CFF0;
+        margin-left: 10px;
+      }
+      h3 {
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .cardwords {
+        font-family: georgia,garamond,serif;
+        color: white;
+      }
+      .border {
+        height: 60px; 
+        width: 100%;
+        font-size: 30px;
+        border-radius: 5px;
+        background-color: lightgrey;
+        border-color: darkslategrey;
+      }
+      textarea {
+        overflow: hidden;
+      }
+      select {
+        width: 20%;
+        height: 30px;
+        margin-bottom: 10px;
+      }
+      button {
+        float: right;
+        margin-top: 5px;
+        margin-right: 10px;
+        width: 200px;
+      }
+      .card {
+        background-color: #1f1f1f;
+        color: white;
+      }
+      img {
+        float: left;
+        height: 150px;
+        width: 230px;
+        margin-right: 10px;
+      }
+      .trophy {
+        float: left;
+        width: 25px;
+        height: 25px;
+      }
+    </style>
+    
+    <script>
+  
+      function add() {
+        var inputbox = document.getElementById("entry").value = "  #";
+      }
+
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
